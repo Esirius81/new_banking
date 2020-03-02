@@ -2,11 +2,9 @@
 https://github.com/jacobwi/new_banking
 
 Scripting for local, no support !
+
 -========================================
 
-FXServer NEW_BANKING
-
-NOTICE: If you edit this script, I will not provide support. I will only provide support for this script in it's unedited state.
 
 [REQUIREMENTS]
 
