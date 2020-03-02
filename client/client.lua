@@ -4,6 +4,7 @@
 ESX                         = nil
 inMenu                      = true
 local showblips = true
+local showblipsATM = true
 local atbank = false
 local bankMenu = true
 local banks = {
@@ -143,6 +144,21 @@ end
 --==             Map Blips	                   ==
 --===============================================
 Citizen.CreateThread(function()
+		
+	if showblipsATM then
+
+	  for k,v in ipairs(atms)do
+		local blip = AddBlipForCoord(v.x, v.y, v.z)
+		SetBlipSprite(blip, v.id)
+		SetBlipScale(blip, 0.5)
+		SetBlipAsShortRange(blip, true)
+		BeginTextCommandSetBlipName("STRING")
+		AddTextComponentString(tostring(v.name))
+		EndTextCommandSetBlipName(blip)
+
+	  end
+	end
+		
 	if showblips then
 	  for k,v in ipairs(banks)do
 		local blip = AddBlipForCoord(v.x, v.y, v.z)
