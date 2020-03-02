@@ -1,5 +1,7 @@
 -= ORIGINAL FROM : =-
 https://github.com/jacobwi/new_banking
+
+Scripting for local, no support !
 -========================================
 
 FXServer NEW_BANKING
